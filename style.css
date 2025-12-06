@@ -29,7 +29,6 @@ h1 {
 /* Base style for all color buttons */
 .color-btn, #reset-btn {
     padding: 10px 20px;
-    border: 2px solid #333;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
@@ -44,29 +43,37 @@ h1 {
 
 /* Specific styling for the 5 color buttons */
 .color-btn[data-color="Red"] {
-    background-color: Red;
+    background-color: red;
+    border: 3px solid red;
+
 }
 
 .color-btn[data-color="Green"] {
     background-color: Green;
+    border: 3px solid green;
 }
 
 .color-btn[data-color="Blue"] {
     background-color: Blue;
+    border: 3px solid blue;
 }
 
 .color-btn[data-color="Yellow"] {
     background-color: Yellow;
     color: #333; /* Change text color for better contrast on yellow */
+    border: 3px solid yellow;
 }
 
 .color-btn[data-color="Purple"] {
     background-color: Purple;
+    border: 3px solid purple;
 }
 
 /* Styling for the Reset button */
 #reset-btn {
+    margin-top: 5rem;
     background-color: White;
     color: #333;
-    border-color: #333;
+    border: 2px solid rgb(184, 166, 166);
+    width: 25%;
 }

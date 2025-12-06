@@ -1,0 +1,72 @@
+/* Basic Reset and Typography */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background change */
+    background-color: white; /* Default background color */
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Container for the buttons */
+.button-container {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Base style for all color buttons */
+.color-btn, #reset-btn {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: white; /* Default text color for contrast on colored buttons */
+    transition: transform 0.1s;
+}
+
+.color-btn:hover, #reset-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Specific styling for the 5 color buttons */
+.color-btn[data-color="Red"] {
+    background-color: Red;
+}
+
+.color-btn[data-color="Green"] {
+    background-color: Green;
+}
+
+.color-btn[data-color="Blue"] {
+    background-color: Blue;
+}
+
+.color-btn[data-color="Yellow"] {
+    background-color: Yellow;
+    color: #333; /* Change text color for better contrast on yellow */
+}
+
+.color-btn[data-color="Purple"] {
+    background-color: Purple;
+}
+
+/* Styling for the Reset button */
+#reset-btn {
+    background-color: White;
+    color: #333;
+    border-color: #333;
+}

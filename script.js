@@ -2,17 +2,25 @@
 // Select all buttons with the class 'color-btn'
 const colorButtons = document.querySelectorAll('.color-btn');
 
+// Select the color display element
+const colorNameDisplay = document.getElementById('color-name-display');
+
 // Select the specific reset button by its ID
 const resetButton = document.getElementById('reset-btn');
 
 // Select the <body> element, as this is the element whose color we want to change
 const body = document.body;
+// This function handles the logic for changing the background AND updating the text
 
 // 2. DEFINE THE COLOR-CHANGING FUNCTION
 // This function handles the logic for changing the background
 function changeBackground(color) {
     // The core action: changing the style property of the body element
     body.style.backgroundColor = color;
+    // This function handles the logic for changing the background AND updating the text
+
+    // 2. Update the display text
+    colorNameDisplay.textContent = `Current Color: ${color}`;
 }
 
 // 3. SET UP EVENT LISTENERS FOR COLOR BUTTONS

@@ -41,7 +41,7 @@ h1 {
     transform: translateY(-2px);
 }
 
-/* Specific styling for the 5 color buttons */
+/* Specific styling for the 6 color buttons */
 .color-btn[data-color="Red"] {
     background-color: red;
     border: 3px solid red;
@@ -67,6 +67,11 @@ h1 {
 .color-btn[data-color="Purple"] {
     background-color: Purple;
     border: 3px solid purple;
+}
+
+.color-btn[data-color="Orange"] {
+    background-color: orange;
+    border: 3px solid orange;
 }
 
 /* Styling for the Reset button */
